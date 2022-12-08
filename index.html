@@ -13,24 +13,24 @@
             <!-- Fetch some planetary data -->
         </div>  
         <div id="launchForm">
-            <form data-testid="testForm">
+            <form name="form" id="formId"  data-testid="testForm">
                 <div class="formField">
                     <label>Pilot Name <input type="text" name="pilotName" id="pilotName"/></label>
                 </div>
                 <div class="formField">
-                    <label>Co-pilot Name <input type="text" name="copilotName"/></label>
+                    <label>Co-pilot Name <input type="text" name="copilotName" id="copilotName"/></label>
                 </div>
                 <div class="formField">
-                    <label>Fuel Level (L) <input type="text" name="fuelLevel"/></label> 
+                    <label>Fuel Level (L) <input type="text" name="fuelLevel" id="fuelLevelNum"/></label> 
                 </div>
                 <div class="formField">
-                    <label>Cargo Mass (kg) <input type="text" name="cargoMass"/></label>
+                    <label>Cargo Mass (kg) <input type="text" name="cargoMass" id="cargoMassNum"/></label>
                 </div>
                 <button id="formSubmit">Submit</button>
             </form>
         </div>
         <div id="launchStatusCheck">
-            <h2 id="launchStatus" data-testid="launchStatus">Awaiting Information Before Launch</h2>
+            <h2 id="launchStatus" data-testid="launchStatus">Shuttle is Ready for Launch/h2>
             <div  id="faultyItems" data-testid="faultyItems">
                 <ol>
                     <li id="pilotStatus" data-testid="pilotStatus">Pilot Ready</li>
