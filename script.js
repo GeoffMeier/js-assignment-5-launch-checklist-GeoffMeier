@@ -31,9 +31,10 @@ if(form!==null)
         const cargoLevel = window.document.getElementById("cargoMassNum")
         const pilot= window.document.getElementById("pilotName")
         const copilot= window.document.getElementById("copilotName")
+      
         if([pilot.value,copilot.value,fuelLevel.value,cargoLevel.value].some((value) => validateInput(value)=== "Empty")){
             alert("pilot, copilot, fuelLevel, cargoMass all must be filled to submit")
-            
+           stop(formSubmission())
     }
         formSubmission(window.document,window.document.getElementById("faultyItems"), pilot.value, copilot.value, fuelLevel.value, cargoLevel.value)
     })
