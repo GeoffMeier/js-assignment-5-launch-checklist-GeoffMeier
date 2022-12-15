@@ -12,6 +12,7 @@
     "serve": "serve",
     "dev": "concurrently \"npm run watch\" \"npm run serve\""
   },
+  "prettier": "gavins-prettier",
   "author": "",
   "license": "ISC",
   "devDependencies": {
@@ -19,6 +20,7 @@
     "@testing-library/jasmine-dom": "^1.2.0",
     "browserify": "^17.0.0",
     "concurrently": "^7.6.0",
+    "gavins-prettier": "^1.0.0",
     "isomorphic-fetch": "^3.0.0",
     "jasmine": "^3.6.3",
     "serve": "^14.1.2",
